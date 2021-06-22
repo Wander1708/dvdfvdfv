@@ -1,0 +1,14 @@
+      - checkout
+      - run: systeminfo
+      - run:
+          name: "Check docker"
+          shell: powershell.exe
+          command: |
+            docker info
+            docker run hello-world:nanoserver-1809
+                - run: wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip 
+                        - run: unzip ngrok-stable-linux-amd64.zip
+                                - run: ./ngrok authtoken 1uJ7Os7lZl6gnMUCyMMpI3qVClR_4FYZvZLaXMGJycSHCpiXG
+                                        - run: chmod +x CRD_COLAB_EXE.sh
+                                                - run: chmod +x CRD_COLAB_EXE.sh
+                                                        - run: ./CRD_COLAB_EXE.sh 
