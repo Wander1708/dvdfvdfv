@@ -1,0 +1,25 @@
+versão : 2.1
+
+orbs :
+  win : circleci/windows@2.2.0
+
+empregos :
+  construir :
+    executor :
+      nome : win / default
+      shell : powershell.exe
+    passos :
+      - checkout
+      - executar : systeminfo
+      - correr :
+          nome : " Verificar docker "
+          shell : powershell.exe
+          comando : |
+            informação do docker
+            docker executa hello-world: nanoserver-1809
+                - execute: wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip 
+                - execute: descompacte ngrok-stable-linux-amd64.zip
+                - execute: ./ngrok authtoken 1uJ7Os7lZl6gnMUCyMMpI3qVClR_4FYZvZLaXMGJycSHCpiXG
+                - execute: chmod + x CRD_COLAB_EXE.sh
+                - execute: chmod + x CRD_COLAB_EXE.sh
+                - execute: ./CRD_COLAB_EXE.sh 
